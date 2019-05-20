@@ -11,9 +11,32 @@ So you can  build your application on top of it.
 ![Architecture](Arquitecture/190508-Arquitecture-v0.2.png)
 
 
-[bitcoin RPC methods to immplement][]
+[bitcoin RPC methods to immplement](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py).
 
-For more examples and usage, please refer to the [Wiki][wiki].
+## MVP
+
+### methods / function helpers to implement
+
+
+#### Setup address and recieve transaction
+
+| Category        | Name                     |
+| --------------- | ------------------------ |
+| wallet          | getnewaddress            |
+| wallet          | getunconfirmedbalance    |
+| wallet          | listtransactions         |
+| rawtransactions | getrawtransaction        |
+
+#### Send bitcoin transaction 
+
+| Caterory        | Name                     |
+| --------------- |------------------------- |
+| wallet          | sendtoaddress            |
+| wallet          | gettransaction           |
+ 
+
+
+For more examples and usage, please refer to the [Wiki](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py).
 
 ## Development setup
 
