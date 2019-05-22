@@ -1,9 +1,9 @@
 # bitcoin-ninja-API
   
-## Open Source Bitcoin library &amp; Dojo.
+## Open Source Python Bitcoin library &amp; Dojo.
    
-Implements the most relevant APIis, Bitcoin Improvement Proposals (BIPs) and helper functions. 
-So you can build your application on top of it.
+Implements the most relevant APIs, Bitcoin Improvement Proposals (BIPs) and helper functions in python. 
+So you can build your python application using it.
 
 [![Flask Version][flask-image]][flask-url]
 
@@ -13,11 +13,11 @@ So you can build your application on top of it.
 ![Architecture]()
 
 
-Full list of [bitcoin RPC methods to implement](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py).
+Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py).
 
 ## MVP (Minimum Viable Prototype) 
 
-### methods / function helpers to implement MVP:
+### MVP methods / function helpers to implement in python:
 
 
 #### 1.- Setup address and recieve transaction
