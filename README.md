@@ -6,6 +6,8 @@ Implements the most relevant APIs: bitcoind RPCs, Bitcoin Improvement Proposals 
 
 It also implements a REST interface of the same set of APIs using Flask to be able to use them for web or mobile.
 
+### WARNING: alpha and WIP version,please ONLY use on regtest never use it on your mainnet node.
+
 [![python-bitcoinrpc][python-bitcoinrpc-image]][python-bitcoinrpc-url]
 
 [![Flask Version][flask-image]][flask-url]
