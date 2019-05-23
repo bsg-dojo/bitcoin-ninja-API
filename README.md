@@ -13,7 +13,7 @@ It also implements a REST interface of the same set of APIs using Flask to be ab
 
 ## Architecture 
 
-![Architecture]()
+![Architecture](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/architecture/190522-Architecture.png)
 
 
 Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py), Work in Progress.
