@@ -26,7 +26,7 @@ We will start with a minimum set of methodds, BIPs, Crypto Funtions and Helpers 
 
 ### 1. bitcoin RPC methods to implement in python:
 
-Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py), ( bitcoin version 0.18.0, as a referece to select methods to include on MVP)
+Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/Methods_to_adapt.py), ( bitcoin version 0.18.0, as a referece to select methods to include on MVP)
 
 Preliminary candidates:
 
