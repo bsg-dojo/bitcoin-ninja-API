@@ -2,9 +2,9 @@
   
 ## Open Source Python Bitcoin library &amp; Dojo.
    
-Implements the most relevant APIs: bitcoind RPCs, Bitcoin Improvement Proposals (BIPs) and helper functions in python, so you can build your python application. 
+Implements the most relevant APIs: bitcoind RPCs, Bitcoin Improvement Proposals (BIPs) and helper functions in python, so you can build your bitcoin python applications. 
 
-It also implements a REST interface of the same set of APIs using Flask to be able to use them for web or mobile.
+It also implements a REST interface of some of the same set of APIs using Flask to be able to use them for web or mobile.
 
 ### WARNING: alpha and WIP version,please ONLY use on regtest never use it on your mainnet node.
 
@@ -18,15 +18,19 @@ It also implements a REST interface of the same set of APIs using Flask to be ab
 ![Architecture](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/architecture/190522-Architecture.png)
 
 
-Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py), Work in Progress.
-
 
 ## MVP (Minimum Viable Prototype) 
 
-### MVP methods / function helpers to implement in python:
+We will start with a minimum set of methodds, BIPs, Crypto Funtions and Helpers to validate the product/market fit of the API
 
 
-#### 1.- Setup address and recieve transaction
+### 1. bitcoin RPC methods to implement in python:
+
+Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-ninja-API/blob/master/RPCMethodstoImplement.py), ( bitcoin version 0.18.0, as a referece to select methods to include on MVP)
+
+Preliminary candidates:
+
+####  Setup address and recieve transaction
 
 | Caterory        | Name                     |
 | --------------- | ------------------------ |
@@ -35,7 +39,7 @@ Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-
 | wallet          | listtransactions         |
 | rawtransactions | getrawtransaction        |
 
-#### 2.- Send bitcoin transaction 
+#### Send bitcoin transaction 
 
 | Caterory        | Name                     |
 | --------------- |------------------------- |
@@ -43,8 +47,21 @@ Full list of [bitcoin RPC methods to adapt](https://github.com/bsg-dojo/bitcoin-
 | wallet          | gettransaction           |
  
 
-#### 3.- bitcoin test coverage
-Port the corresponding test suite of bitcoin core with it's own data.
+### 2. BIPs to Implement:
+
+TODO
+
+### 3. Crypto Functions to implement:
+
+TODO
+
+### 4. Helper functions to implement:
+
+TODO
+
+## 5.- bitcoin test coverage
+
+Port the corresponding test suite of bitcoin core and create it's own set of data.
 
 ---
 
@@ -58,6 +75,8 @@ for more information.
 
 
 Roberto Serrano [@StartupsPal](https://twitter.com/StarupsPal)
+
+My time to work on this project is very limited, if you are interested on this project please consider be part of the team to contribute.
 
 <!-- Markdown link & img dfn's -->
 [flask-image]: https://img.shields.io/badge/1.0.2-Flask-green.svg 
