@@ -43,7 +43,7 @@ def home():
 
 @app.route("/getwalletinfo")
 def getwalletinfo():
-    # it doesn't work with params '[]', '[""]', None, '["walletname": None]' so I used CallRPC([["getwalletinfo" ]])
+    # it doesn't work with params '[]', '[""]', None, '["walletname": None]' so I end up using: CallRPC([["getwalletinfo" ]])
     return jsonify(CallRPC([["getwalletinfo" ]]))
 
 @app.route("/listunspent")

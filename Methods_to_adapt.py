@@ -56,7 +56,7 @@
 # rawtransactions	        fundrawtransaction
 # ------------------ UTIL
 # util			        createmultisig
-# util			        validateaddress
+# util			        validateaddress                         Yes
 # util			        verifymessage
 # util			        estimatefee
 # util			        estimatesmartfee

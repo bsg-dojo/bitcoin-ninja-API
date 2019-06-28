@@ -1,5 +1,8 @@
 # Adapted from @Gavin Andresen and Taylor Gering spendfrom
 
+# Activate Debugger whenever pyton3 is started on this script
+# from pudb import set_trace; set_trace()
+
 from decimal import *
 import time
 import logging
@@ -7,13 +10,13 @@ import json
 from flask import json, jsonify
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 def check_json_precision():
     """Make sure json library being used does not lose precision converting BTC values"""
-    n = Decimal("20000000.00000003")
+    n = Decimal("20_000_000.00000003")
     satoshis = int(json.loads(json.dumps(float(n)))*1.0e8)
-    if satoshis != 2000000000000003:
+    if satoshis != 2_000_000_000_000_003:
         raise RuntimeError("JSON encode/decode loses precision")
 
 class RPCbitcoin:
@@ -35,7 +38,7 @@ class RPCbitcoin:
         """Connect to a bitcoin JSON-RPC server"""
         try:
             result = AuthServiceProxy(uri)
-            # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
+            # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors
             # but also make sure to what bitcoind network we're talking to
             self.logger.info(f"Connected to {result.getmininginfo()['chain']}")
             print (f"network: {result}")
@@ -48,6 +51,10 @@ class RPCbitcoin:
     def getnewaddress(self, label = "", addressType = "legacy" ):
         self.logger.debug(f"Generate new address {label} of type {addressType} ")
         return self.bitcoindConnection.getnewaddress(label, addressType)
+
+    def validateaddress(self, address):
+        self.logger.debug(f"validate new address {address} ")
+        return self.bitcoindConnection.validateaddress(address)
 
     def listrecievedbyaddress(self, searchAddress=None):
         self.logger.debug(f"list addresses called with search account = {searchAddress}")
